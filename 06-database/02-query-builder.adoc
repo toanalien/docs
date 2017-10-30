@@ -494,7 +494,7 @@ trx.rollback() // will not insert anything
 ----
 
 ==== transaction
-Also, you can wrap your transactions inside a *callback*. The major difference is, you do not have to call `commit or `rollback` manually. If any of your queries throws an error, the transaction
+Also, you can wrap your transactions inside a *callback*. The major difference is, you do not have to call `commit` or `rollback` manually. If any of your queries throws an error, the transaction
 rolls back automatically. Otherwise, it is committed.
 
 [source, javascript]
